@@ -7,6 +7,8 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Style the top navigation bar */
 .topnav {
   overflow: hidden;
   background-color: #209F85;
@@ -15,7 +17,7 @@ body {
 }
 input[type="search"]{
     font-size: 20px;
-   
+  
     background-size: 20px;
     background-position: 210px;
     background-repeat: no-repeat;
@@ -46,7 +48,19 @@ input[type="search"]{
 }
 
 
+/* Style the content */
+.content {
+  background-color: white;
+  padding: 10px;
+  /* height: 200px; Should be removed. Only for demonstration */
+}
 
+
+.logo_titre {
+    color: white;
+    padding: 1px;
+    margin: 10px;
+}
 form{
     padding: 20px;
     text-align: right;
@@ -56,9 +70,31 @@ ul a {
     color: white;
     letter-spacing: 0.1rem;
 }
-
-
-
+table{
+    border-collapse: collapse;
+   
+  }
+  
+  th, td{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    
+  }
+   th{ border: none; }
+   .b{
+    text-align: center;
+   }
+  .sp{
+    background-color:#209F85 ;
+    border-radius: 10px;
+    height: 45px;
+    margin: 50px;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    padding: 1px;
+    color: white;
+}
 
 footer{
     display: block;
