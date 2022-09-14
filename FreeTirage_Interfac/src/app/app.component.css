@@ -21,10 +21,12 @@ input[type="search"]{
     background-repeat: no-repeat;
     background-position-y: 5px;
     background-color: #f2f2f2;
-    width: 250px;
+    width: 400px;
     height: 28px;
     padding: 20;
     border: none;
+
+    margin-right: 40px;
 }
 
 /* Style the topnav links */
@@ -37,6 +39,8 @@ input[type="search"]{
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  padding-top: 40px;
+  font-size: 20px;
 }
 
 /* Change color on hover */
@@ -52,6 +56,7 @@ form{
     text-align: right;
 }
 ul a {
+  font-family: irish Grover;
     text-align: right;
     color: white;
     letter-spacing: 0.1rem;
@@ -76,4 +81,11 @@ footer{
 .footer {
     background-color: #209F85;
     color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+  }
+
+  .router{
+    margin-bottom: 50px;
   }

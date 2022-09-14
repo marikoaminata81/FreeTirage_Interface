@@ -14,7 +14,13 @@ import {MatMenuModule} from '@angular/material/menu';
 import { DetailsListeComponent } from './details-liste/details-liste.component';
 import { DetailsTirageComponent } from './details-tirage/details-tirage.component';
 import { TirageComponent } from './tirage/tirage.component';
-import { AccueilComponent } from './accueil/accueil.component'
+import { AccueilComponent } from './accueil/accueil.component';
+import { BarChartComponent } from './bar-chart/bar-chart.component'
+import { NgChartsModule } from 'ng2-charts'
+import { HttpClientModule } from '@angular/common/http';
+import { ListePostulantComponent } from './liste-postulant/liste-postulant.component';
+import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
+import { ImporterComponent } from './importer/importer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +29,11 @@ import { AccueilComponent } from './accueil/accueil.component'
     DetailsListeComponent,
     DetailsTirageComponent,
     TirageComponent,
-    AccueilComponent
+    AccueilComponent,
+    BarChartComponent,
+    ListePostulantComponent,
+    ImporterComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -35,7 +45,10 @@ import { AccueilComponent } from './accueil/accueil.component'
     MatIconModule,
     MatListModule,
     MatMenuModule,
-    
+    NgChartsModule,
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

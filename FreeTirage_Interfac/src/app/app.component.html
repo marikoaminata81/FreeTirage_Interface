@@ -8,7 +8,6 @@
           <a routerLink="/acceuil" routerLinkActive="active">Acceuil</a>
           <a routerLink="/tirage" routerLinkActive="active">Tirage</a>
           <a routerLink="/detailliste" routerLinkActive="active">Liste Tirage</a>
-          <a routerLink="/tirage" routerLinkActive="active">Tirage</a>
         </ul>
       <form >
         <input type="search" name="R" placeholder="Recherche" size="30" >
@@ -16,8 +15,10 @@
       </form>
     </div>
   </header>
+  <div class="router">
+    <router-outlet></router-outlet>
 
-  <router-outlet></router-outlet>
+  </div>
 
   <footer style="width:100%" class="footer">
     <div class="main_footer center_text">

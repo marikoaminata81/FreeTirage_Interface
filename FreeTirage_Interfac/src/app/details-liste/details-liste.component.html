@@ -34,21 +34,22 @@
                       <th style="width:50%">Libellé Tirage</th>
                       <th style="width:50%">Nombres tirés</th>
                     </tr>
-                    <tr>
-                      <td><a routerLink="/detailtirage" routerLinkActive="active">Tirage1</a></td>
-                      <td>12</td>
+                    <tr *ngFor = "let detaillistes of detailliste">
+                      <td> <button (click) = "goToDetailTirage(detaillistes[0])" class = "btn btn-info" style="margin-left: 10px">{{detaillistes[2]}}</button></td>
+                      <td>{{detaillistes[1]}}</td>
                     </tr>
-                    <tr>
+                    <!-- <tr>
                       <td>Tirage 2</td>
                       <td>12</td>
                     </tr>
                     <tr>
                         <td>Tirage 3</td>
                         <td>12</td>
-                      </tr>
+                      </tr> -->
                   </table>
                 
             </div>
     </div>
   </main>
+
 </body>
